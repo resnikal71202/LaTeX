@@ -5,3 +5,9 @@ theme: just-the-docs
 
 url: https://resnikal71202.github.io/LaTeX
 
+gems:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
