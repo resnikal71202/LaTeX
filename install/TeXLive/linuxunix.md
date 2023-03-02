@@ -1,9 +1,9 @@
 ---
 layout: page
-title: TeXLive Linux
+title: TeX Live Linux
 parent: Install
 nav_order: 2
 nav_order: 3
 ---
-# Install TeXLive on Linux/Unix
+# Install TeX Live on Linux/Unix
 
