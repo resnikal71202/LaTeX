@@ -1,8 +1,7 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: LaTeX
+email: resnikal71202@th-nuernberg.de
+description: A guide on how to install an use LaTeX
 theme: just-the-docs
 
 url: https://resnikal71202.github.io/LaTeX
 
-aux_links:
-  Template Repository: https://resnikal71202.github.io/LaTeX
