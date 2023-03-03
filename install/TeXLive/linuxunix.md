@@ -7,3 +7,6 @@ nav_order: 3
 ---
 # Install TeX Live on Linux/Unix
 
+---
+
+[return to install](../install.md)

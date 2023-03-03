@@ -1,11 +1,11 @@
 ---
 layout: page
-title: TeX Live Windows
+title: Git Windows
 parent: Install
 nav_order: 2
-nav_order: 1
+nav_order: 3
 ---
-# Install TeX Live on Windows
+# Install Git on Windows
 
 ---
 

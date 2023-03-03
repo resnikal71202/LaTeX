@@ -16,4 +16,8 @@ Here is a discription to follow step by step:
 3. open a terminal and navigate to the uncompressed folder. (using for example: `cd downloads/`)
 4. Change the directory to the uncompressed folder: `cd install-tl-20220527`
 5. inside the folder you will find a binary called file called install-tl run it: `./install-tl`
-6. TODO
+6. TODO (path, settings for the installer...)
+
+---
+
+[return to install](../install.md)

@@ -10,4 +10,8 @@ LaTeX is a high-quality typesetting system; it includes features designed for th
 
 ----
 
+[getting started](getting-started.md)
+
+----
+
 [^1]: [latex-project](https://www.latex-project.org/).
