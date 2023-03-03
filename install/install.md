@@ -27,7 +27,7 @@ Another option is [Citavi](https://www.citavi.com/).
 
 ---
 
-[return to getting started](../../getting-started.md)
+[return to getting started](../getting-started.md)
 
 ---
 
