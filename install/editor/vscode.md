@@ -8,5 +8,11 @@ nav_order: 4
 # Install visual studio code
 
 1. Download the installer [here](https://code.visualstudio.com/) and run it. 
-2. Todo (follow the installer the standard settings should be ok)
-3. klick ![extensions icon](extenstions.PNG)
+2. TODO (follow the installer the standard settings should be ok)
+3. click ![extensions icon](extenstions.PNG) (the extensions tab)
+4. search for [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) and install it.
+5. (optionally) search for [LTeX](https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex) and install it. This extension doses the grammar/spelling check.
+
+[return to install page](../install.md)
+
+[return to getting started without a bibliography manager](../../getting-started.md)
