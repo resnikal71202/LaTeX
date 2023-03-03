@@ -9,7 +9,7 @@ nav_order: 4
 
 1. Download the installer [here](https://code.visualstudio.com/) and run it. 
 2. TODO (follow the installer the standard settings should be ok)
-3. click ![extensions icon](extenstions.PNG) (the extensions tab)
+3. click <img src="extenstions.PNG" width="50"> (the extensions tab)
 4. search for [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) and install it.
 5. (optionally) search for [LTeX](https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex) and install it. This extension doses the grammar/spelling check.
 
