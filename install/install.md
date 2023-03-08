@@ -11,7 +11,7 @@ There are several components we need to use:
 Here we will use TeX Live. It is well maintained and is available on all common operating systems.
 Install on [Linux/Unix](TeXLive/linuxunix.md), [windows](TeXLive/windows.md).
 
-For macOS MacTeX is a great distribution. It is essentially the same as TeX Live but with better compatibly for macOS.[^1] We will use the instructions from the MacTeX webpage to install TeX Live on [macOS](TeXLive/macos.md).
+For macOS MacTeX is a great distribution. It is essentially the same as TeX Live but with better compatibly for macOS.[^1] We will use the instructions from the MacTeX webpage to install TeX Live on [macOS](TeXLive/macOS.md).
 
 ### text editor
 Personally I use [visual studio code](editor/vscode.md).
