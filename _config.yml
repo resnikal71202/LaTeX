@@ -8,5 +8,4 @@ url: https://resnikal71202.github.io/LaTeX
 plugins:
   - jekyll-relative-links
 
-just_the_docs:
-  color_scheme: dark
+color_scheme: dark
