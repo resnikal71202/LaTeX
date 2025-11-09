@@ -1,22 +1,16 @@
 documentation:
-  - '**/*.md'
-  - '!README.md'
+  - any:
+    - '**/*.md'
+    - '!README.md'
+    - 'install/**'
+    - 'tutorial/**'
+    - 'cheat-sheet/**'
 
-workflow:
-  - '.github/workflows/**'
-  - '.github/dependabot.yml'
-
-config:
-  - '_config.yml'
-  - 'Gemfile'
-  - 'Gemfile.lock'
-  - '.markdownlint.json'
-
-install-guide:
-  - 'install/**'
-
-tutorial:
-  - 'tutorial/**'
-
-cheat-sheet:
-  - 'cheat-sheet/**'
+enhancement:
+  - any:
+    - '.github/workflows/**'
+    - '.github/dependabot.yml'
+    - '_config.yml'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - '.markdownlint.json'
