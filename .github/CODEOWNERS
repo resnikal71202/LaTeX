@@ -1,0 +1,8 @@
+# Default owners for everything in the repo
+* @resnikal71202
+
+# Workflow files require special attention
+/.github/workflows/ @resnikal71202
+
+# Documentation files
+*.md @resnikal71202

@@ -1,0 +1,69 @@
+name: Security Scanning
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  schedule:
+    # Run weekly on Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  # CodeQL Analysis for security vulnerabilities
+  codeql-analysis:
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ['ruby']
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@662472033e021d55d94146f66f6058822889cafe # v3.27.0
+        with:
+          languages: ${{ matrix.language }}
+          queries: security-and-quality
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@662472033e021d55d94146f66f6058822889cafe # v3.27.0
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@662472033e021d55d94146f66f6058822889cafe # v3.27.0
+        with:
+          category: "/language:${{ matrix.language }}"
+
+  # Dependency scanning with Dependabot alerts
+  dependency-scan:
+    name: Dependency Scanning
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@a2bbe5b1b236842c1cb7dd11e8e3b51e0a616acc # v1.202.0
+        with:
+          ruby-version: '3.3.5'
+          bundler-cache: false
+
+      - name: Install dependencies
+        run: |
+          bundle install
+
+      - name: Run bundle audit
+        run: |
+          gem install bundler-audit
+          bundle audit check --update
+        continue-on-error: true
