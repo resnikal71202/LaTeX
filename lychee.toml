@@ -1,0 +1,20 @@
+# Lychee configuration for link checking
+# Documentation: https://github.com/lycheeverse/lychee
+
+# Exclude external GitHub Pages URLs that would be internal after deployment
+exclude = [
+    # Exclude the GitHub Pages domain - these are internal links that will work after deployment
+    'https://resnikal71202\.github\.io/LaTeX/.*'
+]
+
+# Accept common HTTP status codes
+accept = [200, 201, 204, 301, 302, 307, 308, 429]
+
+# Increase timeout for slower connections
+timeout = 20
+
+# Retry failed requests
+max_retries = 2
+
+# Maximum number of concurrent requests
+max_concurrency = 8
