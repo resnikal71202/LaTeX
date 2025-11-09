@@ -20,10 +20,10 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@v4 # v4.2.2
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@a2bbe5b1b236842c1cb7dd11e8e3b51e0a616acc # v1.202.0
+        uses: ruby/setup-ruby@v1 # v1.202.0
         with:
           ruby-version: '3.3.5'
           bundler-cache: true
@@ -31,7 +31,7 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
+        uses: actions/configure-pages@v5 # v5.0.0
 
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
@@ -59,10 +59,10 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@v4 # v4.2.2
 
       - name: Run markdownlint
-        uses: DavidAnson/markdownlint-cli2-action@db43aef879112c3119a410d69f66701e0d530809 # v17.0.0
+        uses: DavidAnson/markdownlint-cli2-action@v17 # v17.0.0
         with:
           globs: |
             **/*.md
@@ -77,10 +77,10 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@v4 # v4.2.2
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@a2bbe5b1b236842c1cb7dd11e8e3b51e0a616acc # v1.202.0
+        uses: ruby/setup-ruby@v1 # v1.202.0
         with:
           ruby-version: '3.3.5'
           bundler-cache: true
@@ -92,7 +92,7 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Check internal links
-        uses: lycheeverse/lychee-action@f81112d0d2a4dd26d4bf8d2e60a80bc09e340714 # v2.1.0
+        uses: lycheeverse/lychee-action@v2 # v2.1.0
         with:
           args: --verbose --no-progress './_site/**/*.html' --base './_site' --offline
           fail: true
@@ -109,9 +109,9 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@v4 # v4.2.2
 
       - name: Dependency Review
-        uses: actions/dependency-review-action@4081b50a6f4a6b7a8a76c059f8124f8cfd3eb6ac # v4.4.0
+        uses: actions/dependency-review-action@v4 # v4.4.0
         with:
           fail-on-severity: moderate
