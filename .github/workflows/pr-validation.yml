@@ -20,7 +20,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # v4.2.2
+        uses: actions/checkout@v5 # v4.2.2
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1 # v1.202.0
@@ -59,7 +59,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # v4.2.2
+        uses: actions/checkout@v5 # v4.2.2
 
       - name: Run markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v17 # v17.0.0
@@ -77,7 +77,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # v4.2.2
+        uses: actions/checkout@v5 # v4.2.2
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1 # v1.202.0
@@ -106,7 +106,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # v4.2.2
+        uses: actions/checkout@v5 # v4.2.2
 
       - name: Dependency Review
         uses: actions/dependency-review-action@v4 # v4.4.0
