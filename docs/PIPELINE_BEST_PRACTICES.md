@@ -13,7 +13,7 @@ The repository now implements a comprehensive set of CI/CD best practices includ
 **Purpose:** Build and deploy the Jekyll site to GitHub Pages
 
 **Best Practices Implemented:**
-- ✅ Pinned action versions to specific commit SHAs for security and reproducibility
+- ✅ use dependabot
 - ✅ Explicit permissions defined (`contents: read`, `pages: write`, `id-token: write`)
 - ✅ Proper concurrency control (no cancellation for production deployments)
 - ✅ Build verification step to catch errors early
