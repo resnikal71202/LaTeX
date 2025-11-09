@@ -1,20 +1,18 @@
 documentation:
-  any:
-    changed-files:
-      any-glob-to-any-file:
-        - '**/*.md'
-        - '!README.md'
-        - 'install/**'
-        - 'tutorial/**'
-        - 'cheat-sheet/**'
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.md'
+      - '!README.md'
+      - 'install/**'
+      - 'tutorial/**'
+      - 'cheat-sheet/**'
 
 enhancement:
-  any:
-    changed-files:
-      any-glob-to-any-file:
-        - '.github/workflows/**'
-        - '.github/dependabot.yml'
-        - '_config.yml'
-        - 'Gemfile'
-        - 'Gemfile.lock'
-        - '.markdownlint.json'
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/**'
+      - '.github/dependabot.yml'
+      - '_config.yml'
+      - 'Gemfile'
+      - 'Gemfile.lock'
+      - '.markdownlint.json'
