@@ -94,10 +94,7 @@ jobs:
       - name: Check internal links
         uses: lycheeverse/lychee-action@v2 # v2.1.0
         with:
-          args: --verbose --no-progress './_site/**/*.html' --base './_site' --offline
-          fail: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          args: --verbose --no-progress "${{ github.workspace }}/_site/**/*.html" --base "${{ github.workspace }}/_site" --offline
 
   # Dependency review for security
   dependency-review:
